@@ -1,0 +1,10 @@
+#!/bin/sh
+
+FILE=lib/langdetect.jar
+GROUP_ID=langdetect
+ARTIFACT_ID=langdetect
+VERSION=20140303
+
+mvn install:install-file -Dfile=$FILE  -DgroupId=$GROUP_ID -DartifactId=$ARTIFACT_ID -Dversion=$VERSION -Dpackaging=jar
+
+echo '\n\n<dependency>\n<groupId>'$GROUP_ID'</groupId>\n<artifactId>'$ARTIFACT_ID'</artifactId>\n<version>'$VERSION'</version>\n</dependency>\n\n'

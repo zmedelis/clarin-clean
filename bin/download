@@ -1,0 +1,10 @@
+#!/bin/bash
+
+lang=( Latvian Greek Spanish Finnish German Swedish Portuguese French Dutch English Italian Danish Maltese Slovenian Estonian Lithuanian Polish Czech Hungarian Slovak Romanian Croatian )
+
+for l in "${lang[@]}"
+do
+  echo $l
+  curl -o resources/$l.rdf http://linkedpolitics.ops.few.vu.nl/api/export_graph\?graph\=http%3A%2F%2Fpurl.org%2Flinkedpolitics%2F$l\&mimetype\=default\&format\=turtle
+done
+
