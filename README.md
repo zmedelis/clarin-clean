@@ -1,10 +1,13 @@
 # clarin-cleanup
 
-A Clojure library designed to ... well, that part is up to you.
+A tool to clean Clarin data to assign correct language to text entries and do some garbage cleaning.
 
 ## Usage
 
-FIXME
+There are a few scripts to get the data and setup dependencies:
+
+* bin/download - will get EU parliament ontology data in turtle format saving it to resources/ttls 
+* bin/lang-install - *language-detection* lib does not have Maven artifacts, install it manually
 
 ## License
 
