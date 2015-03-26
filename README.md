@@ -9,7 +9,7 @@ There are a few scripts to get the data and setup dependencies:
 * bin/download - will get EU parliament ontology data in turtle format saving it to resources/ttls 
 * bin/lang-install - *language-detection* lib does not have Maven artifacts, install it manually
 
-Once in REPL
+Once in REPL (for those not into Clojure, you can easily install [Leiningen](http://leiningen.org/) to get the REPL)
 
 ```
 (use 'clarin-cleanup.core)
